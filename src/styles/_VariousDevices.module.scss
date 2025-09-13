@@ -1,0 +1,38 @@
+.variousDevices{
+    &-headline{
+        
+      @apply leading-[110%];
+      
+      //laptop
+      @media only screen and (max-width: 1024px) {
+        font-size: 56px;
+        // line-height: 140%;
+
+      }
+      
+      //tablet
+      @media only screen and (max-width: 768px) {
+        font-size: 46px;
+        // line-height: 140%;
+      }
+
+      //mobile
+      @media only screen and (max-width: 480px) {
+        font-size: 32px;
+        // line-height: 140%;
+      }
+
+      //iphone mobile
+      @media only screen and (max-width: 400px) {
+        font-size: 24px;
+        // line-height: 140%;
+      }
+
+      &-col{
+
+        @media only screen and (max-width: 1024px) {
+          @apply flex flex-col items-center;
+        }
+      }
+    }
+}

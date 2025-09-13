@@ -1,0 +1,92 @@
+.footer {
+	// @apply  p-0 h-[329px] w-full tablet:mt-24  laptop:w-[960px] laptop:m-auto  tablet:w-[640px] mobile:w-[448px] s:w-[368px];
+	@apply p-0 h-[243px] w-[100vw] mobile:m-auto;
+
+	&-container {
+		@apply px-24 w-[1204px] pc:w-full h-full m-auto mt-10;
+
+		@media only screen and (max-width: 1024px) {
+			@apply px-8 w-full h-[250px];
+		}
+		@media only screen and (max-width: 768px) {
+			@apply hidden;
+		}
+	}
+	&-row {
+		@apply pb-3 flex flex-row justify-between  w-full h-full;
+		font-weight: lighter;
+
+		// @media only screen and (max-width: 1024px) {
+		//   @apply pt-8;
+		// }
+
+		// @media only screen and (max-width: 768px) {
+		//   @apply py-0;
+		// }
+
+		//   background-color: rgb(254 202 202);
+	}
+
+	&-block {
+		&-col {
+			@include col;
+			@apply m-auto hidden;
+
+			// @include col;
+			// @apply m-auto hidden w-[400px];
+
+			@media only screen and (max-width: 768px) {
+				@apply block max-w-[400px];
+			}
+
+			@media only screen and (max-width: 420px) {
+				@apply w-full;
+			}
+		}
+	}
+
+	&-ul {
+		@include col;
+
+		@apply flex flex-col items-center justify-start list-none text-black;
+	}
+
+	&-li {
+		@include row;
+		@apply list-none my-[4px];
+
+		&-col {
+			// @include col;
+			@apply flex flex-col items-start justify-center pl-5;
+		}
+
+		&-title {
+			// @apply text-white;
+			@apply font-medium;
+			font-size: 18px;
+			line-height: 25px;
+		}
+
+		&-text {
+			// @apply text-white;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	&-link {
+		// @apply text-white bg-black;
+
+		// color: white;
+		// background-color:rgb(250, 50, 160) !important;
+	}
+
+	&-link:active {
+		// @apply text-white bg-black;
+
+		// color: white;
+		// background-color:rgb(90, 250, 50) !important;
+		background-color: #666666 !important;
+	}
+}

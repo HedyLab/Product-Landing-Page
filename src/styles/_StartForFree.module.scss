@@ -1,0 +1,63 @@
+.startForFree{
+
+    @apply flex flex-col justify-start items-center bg-cover bg-center;
+
+    // padding: 50px 0px;
+    
+    background: linear-gradient(254.6deg, #242424 0%, #5A5A5A 100%);
+
+    //laptop
+    @media only screen and (max-width: 1024px) {
+        height: 598px;
+    }
+
+    //tablet
+    @media only screen and (max-width: 768px) {
+        height: 271px;
+    }
+
+    //mobile
+    @media only screen and (max-width: 480px) {
+        height: 279px;
+    }
+
+    //iphone mobile
+    @media only screen and (max-width: 420px) {
+        height: 256px;
+    }
+
+    &-headline{
+
+        //laptop
+        @media only screen and (max-width: 1024px) {
+        font-size: 72px;
+        line-height: 140%;
+
+        }
+        
+        //tablet
+        @media only screen and (max-width: 768px) {
+        font-size: 40px;
+        line-height: 140%;
+        }
+
+        //iphone mobile
+        @media only screen and (max-width: 420px) {
+        font-size: 32px;
+        line-height: 140%;
+        }
+    }
+
+    &-text{
+      
+        //tablet
+        @media only screen and (max-width: 768px) {
+            font-size: 16px;
+        }
+  
+        // iphone mobile
+        @media only screen and (max-width: 420px) {
+            font-size: 14px;
+        }
+      }
+}

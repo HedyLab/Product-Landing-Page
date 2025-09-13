@@ -1,0 +1,561 @@
+
+.programFee{
+    @include col;
+    @apply mt-[104px] tablet:mt-[88px];
+
+    &-headline {
+
+      //mobile
+      @media only screen and (max-width: 480px) {
+        font-size: 32px;
+        line-height: 140%;
+      }
+
+      //iphone mobile
+      @media only screen and (max-width: 420px) {
+        font-size: 24px;
+        line-height: 140%;
+      }
+    }
+    
+    &-col{
+        @include col;
+
+        @apply max-w-[1060px] m-auto w-full;
+
+        // @media only screen and (max-width: 768px) {
+        //   @apply w-[592px];
+        
+        // }
+    
+        // //mobile
+        // @media only screen and (max-width: 480px) {
+        //   @apply w-[448px];
+    
+        // }
+    
+        // //iphone mobile
+        // @media only screen and (max-width: 420px) {
+        //   @apply w-[360px];
+    
+        // }
+    }
+
+
+
+    &-img{
+
+        @apply max-w-[1000px] h-[1151px];
+  
+
+        @media only screen and (max-width: 1024px) {
+          @apply w-[951px];
+         }
+
+
+        @media only screen and (max-width: 768px) {
+          // @apply w-[592px];
+          @apply h-[951px];
+        
+        }
+    
+        //mobile
+        @media only screen and (max-width: 480px) {
+          // @apply w-[448px];
+          @apply w-[651px] h-[851px];
+        }
+    
+        //iphone mobile
+        @media only screen and (max-width: 420px) {
+          // @apply w-[368px];
+          @apply h-[751px];
+        }
+
+        &-form{
+          
+
+          @apply max-w-[1100px] flex;
+
+          @media only screen and (max-width: 1024px) {
+            @apply w-[951px]
+           }
+  
+          @media only screen and (max-width: 768px) {
+            @apply w-[592px];
+          
+          }
+      
+          //mobile
+          @media only screen and (max-width: 480px) {
+            @apply w-[448px];
+      
+          }
+      
+          //iphone mobile
+          @media only screen and (max-width: 420px) {
+            @apply w-[368px];
+      
+          }
+        }
+
+        &-form-lg{
+          @apply max-w-[1100px] flex;
+
+          @media only screen and (max-width: 1024px) {
+            @apply w-[951px]
+           }
+  
+          @media only screen and (max-width: 768px) {
+            @apply w-[592px];
+          
+          }
+      
+          //mobile
+          @media only screen and (max-width: 480px) {
+            @apply w-[448px];
+      
+          }
+      
+          //iphone mobile
+          @media only screen and (max-width: 420px) {
+            @apply w-[368px];
+      
+          }
+        }
+    }
+
+    &-card{
+        // @include col;
+        @apply m-auto w-full [padding:24px_24px_24px_24px];
+
+        
+
+        // @media only screen and (max-width: 1024px) {
+        //   @apply w-[304px];
+        // }
+
+        // @media only screen and (max-width: 768px) {
+        //   // @apply w-[282px];
+        //   @apply w-[299px];
+        // }
+
+        @media only screen and (max-width: 480px) {
+          // @apply w-[298px];
+          padding:24px 24px 16px 24px;
+        }
+
+        // @media only screen and (max-width: 420px) {
+        //   @apply w-[245px];
+        //   padding:24px 24px 16px 24px;
+        // }
+
+        &-price{
+          // @apply flex flex-row items-center justify-start mt-4;
+          @include row;
+          @apply mt-4 mb-[10px];
+        }
+
+
+        &-title{
+            // @include col;
+            @apply flex-row flex justify-start items-center;
+        }
+
+        &-text{
+          @apply my-8 font-semibold text-xl;
+
+          //laptop
+          @media only screen and (max-width: 1024px) {
+            @apply my-6;
+          }
+
+          @media only screen and (max-width: 768px) {
+            font-size: 16px;
+          }
+          
+          @media only screen and (max-width: 480px) {
+            font-size: 13px;
+          }
+        }
+
+        &-body{
+            // @apply justify-center flex-row m-auto;
+            &-text{
+              @media only screen and (max-width: 480px) {
+                font-size: 12px;
+              }
+            }
+        }
+
+        &-point{
+            background-color: #FFFCF7;
+            border: #FFAB37 1px solid;
+        }
+
+        &-normal{
+            @apply border-[1px] border-shadowGray;
+        }
+    }
+
+    &-title{
+        @include row;
+    }
+
+    &-body{
+        @include row;
+    }
+
+    &-ul{
+        @include col;
+
+        @apply flex flex-col items-center justify-start list-none text-black w-[280px];
+    }
+
+
+    &-form{
+        @apply my-10 w-full h-full
+        flex-col items-center justify-start;
+
+        &-point{
+            background-color: #FFFCF7;
+            border: #FFAB37 1px solid;
+        }
+
+        &-normal{
+            @apply border-[1px] border-shadowGray;
+        }
+    }
+
+}
+
+.programButton{
+  @include row;
+  @apply p-2 w-20 h-[34px] rounded-3xl cursor-pointer;
+  background: #EFEFEF;
+
+  &-light{
+
+      background: #FFFFFF;
+      box-shadow: 0px 1px 6px rgba(255, 171, 55, 0.5);
+
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.42, 0, 0.1, 0.72);
+      transition-duration: 500ms;
+  }
+}
+
+
+.programButton-bg{
+  @apply w-[256px] h-[36px] py-2 rounded-[100px] bg-cardShadow mt-[34px];
+  position: relative;
+}
+
+.customization{
+  @include col;
+
+  @apply max-w-[998px] w-full m-auto;
+
+  // @media only screen and (max-width: 768px) {
+  //   @apply w-[592px];
+  
+  // }
+
+  // //mobile
+  // @media only screen and (max-width: 480px) {
+  //   @apply w-[448px];
+
+  // }
+
+  // //iphone mobile
+  // @media only screen and (max-width: 420px) {
+  //   @apply w-[360px];
+
+  // }
+  
+   &-card{
+    // max-w-[288px]
+      @apply border-[1px] border-shadowGray p-4  w-full h-[154px];
+      // max-w-[304px] 
+      @media only screen and (max-width: 1024px) {
+        @apply [padding:22px_22px];
+      }
+
+      @media only screen and (max-width: 834px) {
+        @apply flex justify-evenly;
+        // w-[592px] 
+      }
+
+      // //mobile
+      // @media only screen and (max-width: 480px) {
+      //   @apply w-[448px];
+      // }
+  
+      // //iphone mobile
+      // @media only screen and (max-width: 420px) {
+      //   @apply w-[359px];
+  
+      // }
+   }
+
+   &-title{
+      @apply flex flex-row items-center;
+
+   }
+
+   &-text{
+    @apply font-medium pt-[6px];
+
+    font-size: 24px;
+    
+    @media only screen and (max-width: 420px) {
+      font-size: 22px;
+    }
+   }
+
+   &-body{
+    // @apply flex flex-row items-center justify-start;
+    @include row;
+
+   }
+
+   &-price{
+
+    font-weight: 700 !important;
+    font-size: 48px;
+
+
+    @media only screen and (max-width: 420px) {
+      font-size: 32px;
+    }
+    
+    &-currency{
+      &-text{
+
+        font-weight: 700 !important;
+        font-size: 12px;
+      }
+    }
+  
+    &-text{
+      font-size: 12px;
+    }
+  }
+}
+
+
+.contact{
+
+    &-border{
+         // @include col;
+         @apply  max-w-[1001px] w-full h-[382px] bg-cover bg-center rounded-3xl justify-center m-auto my-[120px];
+    
+         background: linear-gradient(-45deg, #FFAB37
+         0%,#FFAB37 15%, #FFFFFF 20%,#FFFFFF 80%,#FFAB37
+         85%,#FFAB37
+         100%);
+
+         @media only screen and (max-width: 1024px) {
+          // @apply w-[806px];
+          @apply h-[314px];
+         }
+
+          @media only screen and (max-width: 768px) {
+            // @apply w-[595px] h-[298px] mt-16;
+            @apply h-[263px] mt-28;
+
+          }
+      
+          //mobile
+          @media only screen and (max-width: 480px) {
+            // @apply w-[448px] h-[228px];
+            @apply h-[228px];
+
+          }
+      
+          //iphone mobile
+          @media only screen and (max-width: 420px) {
+            // @apply w-[361px] h-[170px];
+            @apply h-[170px];
+
+          }
+
+    }
+
+
+    &-col{
+        // @include col;
+        @apply  max-w-[998px] w-full h-[378px] bg-cover bg-center rounded-3xl flex flex-col [padding:64px_72px_50px_72px] m-[2px] justify-between;
+    
+        background: linear-gradient(180deg, #3C3C3C 0%, #5A5A5A 100%);
+
+          @media only screen and (max-width: 1024px) {
+            // @apply w-[803px] h-[311px];
+            @apply h-[311px];
+            padding: 56px 32px 56px 56px;
+          }
+
+          @media only screen and (max-width: 768px) {
+            // @apply w-[592px] h-[260px];
+            @apply h-[260px];
+            padding: 40px !important;
+          }
+      
+          //mobile
+          @media only screen and (max-width: 480px) {
+            // @apply w-[448px] h-[225px];
+            @apply h-[225px];
+            padding: 16px !important;
+          }
+      
+          //iphone mobile
+          @media only screen and (max-width: 420px) {
+            // @apply w-[359px] h-[166px];
+            @apply h-[166px];
+          }
+
+    }
+
+    &-describe{
+      @apply w-[380px] h-[124px];
+
+      @media only screen and (max-width: 768px) {
+        @apply w-[340px] h-[100px];
+
+      }
+
+      @media only screen and (max-width: 480px) {
+        @apply w-[258px] h-[117px];
+      }
+
+      @media only screen and (max-width: 420px) {
+        @apply w-[205px] h-[97px];
+      }
+
+      &-col{
+        @apply w-[380px] h-[92px];
+      
+        @media only screen and (max-width: 768px) {
+          @apply w-[340px] h-[68px];
+        }
+      
+        @media only screen and (max-width: 480px) {
+          @apply w-[258px] h-[85px];
+        }
+      
+        @media only screen and (max-width: 420px) {
+          @apply  w-[205px] h-full;
+        }
+      
+        &-text{
+          @apply font-bold;
+          // font-size: 16px;
+          font-size: 26px;
+      
+          @media only screen and (max-width: 768px) {
+            // @apply w-[340px] h-[68px];
+            // font-size: 12px;
+            font-size: 22px;
+          }
+          @media only screen and (max-width: 420px) {
+            @apply font-normal;
+            font-size: 18px;
+
+          }
+        }
+      }
+    }
+
+    &-title{
+      @apply font-semibold;
+
+      font-size: 16px;
+      line-height: 140%;
+
+      // @media only screen and (max-width: 768px) {
+      //   font-size: 24px;
+      //   line-height: 24px;
+      //   font-weight: 600 !important;
+      // }
+
+      @media only screen and (max-width: 420px) {
+        font-size: 12px;
+      }
+    }
+
+   
+    &-btn{
+        @apply justify-self-end;
+
+        .btn-primaryContact{
+          
+          @media only screen and (max-width: 480px) {
+            width: 112px !important;
+            height: 32px !important;
+            padding: 5px 10px !important;
+          }
+        }
+
+        &-icon{
+          @apply w-[16px] h-[16px];
+
+          @media only screen and (max-width: 768px) {
+            @apply w-[13px] h-[13px];
+          }
+        }
+
+        &-text{
+          @apply font-normal;
+          font-size: 16px;
+
+
+          @media only screen and (max-width: 768px) {
+            @apply font-normal;
+            font-size: 12px;
+          }
+        }
+    }
+}
+
+
+.test-img{
+
+  @apply h-[799px] mt-[199px];
+
+  @media only screen and (max-width: 768px) {
+    @apply h-[704px] mt-[244px];
+  }
+
+  @media only screen and (max-width: 480px) {
+    @apply h-[713px] mt-[188px];
+  }
+
+  @media only screen and (max-width: 420px) {
+    @apply h-[638px] mt-[174px];
+
+  }
+
+  &-form{
+
+    @apply flex;
+
+    @media only screen and (max-width: 768px) {
+      @apply w-[592px];
+    
+    }
+
+    //mobile
+    @media only screen and (max-width: 480px) {
+      @apply w-[448px];
+
+    }
+
+    //iphone mobile
+    @media only screen and (max-width: 420px) {
+      @apply w-[368px];
+
+    }
+  }
+  
+}
+
+

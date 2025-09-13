@@ -1,0 +1,237 @@
+    
+    .button {
+        @apply py-[8px] px-[16px] h-[34px] text-white  space-x-2 cursor-pointer;
+    
+        @include row;
+    
+        &-icon {
+            @apply h-[8px] w-[8px] rounded-full;
+        }
+
+        &-text-black_purple{
+            @apply border-0 bg-transparent text-black_purple;
+        }
+    
+        &-text-primary {
+            @apply border-0 bg-transparent text-primary;
+            // &:hover{
+            //     @apply  bg-primary_light;
+            // }
+        }
+    
+        &-text-secondary {
+            @apply border-0 bg-transparent text-secondary;
+            // &:hover{
+            //     @apply  bg-secondary_light;
+            // }
+        }
+        &-text-tertiary {
+            @apply border-0 bg-transparent text-tertiary;
+            // &:hover{
+            //     @apply  bg-tertiary_light;
+            // }
+        }
+        &-text-quaternary {
+            @apply border-0 bg-transparent text-grayscale_lightest;
+            // &:hover{
+            //     @apply  bg-quaternary_light;
+            // }
+        }
+        &-text-alert {
+            @apply border-0 bg-transparent text-alert;
+            // &:hover{
+            //     @apply  bg-alert_light;
+            // }
+        }
+        &-text-grayscale {
+            @apply border-0 bg-transparent text-grayscale;
+            // &:hover{
+            //     @apply  bg-grayscale_light;
+            // }
+        }
+    
+        &-contained-black_purple {
+            @apply text-white bg-black_purple;
+            // &:hover{
+            //     @apply  bg-primary_dark
+            // }
+        }
+
+        &-contained-primary {
+            @apply text-white bg-primary;
+            // &:hover{
+            //     @apply  bg-primary_dark
+            // }
+        }
+        &-contained-secondary {
+            @apply text-white bg-secondary;
+            // &:hover{
+            //     @apply  bg-secondary_dark
+            // }
+        }
+        &-contained-tertiary {
+            @apply text-white bg-tertiary;
+            // &:hover{
+            //     @apply  bg-tertiary_dark
+            // }
+        }
+        &-contained-quaternary {
+            @apply text-white bg-grayscale_lightest;
+            // &:hover{
+            //     @apply  bg-quaternary_dark
+            // }
+        }
+        &-contained-alert {
+            @apply text-white bg-alert;
+            // &:hover{
+            //     @apply  bg-alert_dark
+            // }
+        }
+        &-contained-grayscale {
+            @apply text-white bg-grayscale;
+            // &:hover{
+            //     @apply  bg-grayscale_dark
+            // }
+    
+        }
+    
+        &-outlined-primary {
+            @apply border text-primary border-primary;
+            // &:hover{
+            //     @apply  bg-primary_light;
+            // }
+        }
+        &-outlined-secondary {
+            @apply border text-secondary border-secondary;
+            // &:hover{
+            //     @apply  bg-secondary_light;
+            // }
+        }
+        &-outlined-tertiary {
+            @apply border text-tertiary border-tertiary;
+            // &:hover{
+            //     @apply  bg-tertiary_light;
+            // }
+        }
+        &-outlined-quaternary {
+            @apply border text-grayscale_lightest border-grayscale_lightest;
+            // &:hover{
+            //     @apply  bg-quaternary_light;
+            // }
+        }
+        &-outlined-alert {
+            @apply border text-alert border-alert;
+            // &:hover{
+            //     @apply  bg-alert_light;
+            // }
+        }
+        &-outlined-grayscale {
+            @apply border text-grayscale border-grayscale;
+            // &:hover{
+            //     @apply  bg-grayscale_light;
+            // }
+        }
+    
+        &-rounded-none {
+            @apply rounded-[0px];
+        }
+        &-rounded-small {
+            @apply rounded-[2px];
+        }
+        &-rounded-normal {
+            @apply rounded-[4px];
+        }
+        &-rounded-large {
+            @apply rounded-[8px];
+        }
+    }
+    
+    
+    
+    .btn{
+
+        // &-full{
+        //     @apply leading-[16px] text-white bg-primary [border:1px_solid_#FFFFFF] rounded-[15px] [padding:7px_60px]  cursor-pointer;
+
+        //     // padding: 7px 18px:
+        // }
+        &-form{
+            @apply  text-white bg-black_purple rounded-[20px] cursor-pointer [padding:12px_48px] w-[192px] h-[48px] ;
+        }
+
+        &-success{
+            @apply  text-white bg-grayscale_lightest rounded-[20px] cursor-not-allowed [padding:12px_48px] w-[192px] h-[48px] ;
+        }
+
+        &-full{
+            @apply  text-white bg-primary [border:1px_solid_#FFFFFF] rounded-[20px]  cursor-pointer [padding:7px_0px] ;
+
+            // padding: 7px 18px:
+        }
+
+        &-fullBlack{
+            @apply  text-white bg-black [border:1px_solid_#FFFFFF] rounded-[20px]  cursor-pointer
+            [padding:7px_0px] ;
+            // padding: 7px 18px:
+        }
+
+        &-primaryContact{
+            // @apply max-w-max  leading-[16px] text-white bg-primary [border:1px_solid_#FFFFFF] rounded-[20px] [padding:7px_30px] cursor-pointer;
+            @apply max-w-max text-white bg-primary  rounded-[30px] [padding:12px_48px] cursor-pointer;
+
+            @media only screen and (max-width: 1024px) {
+                @apply font-normal mt-[5%];
+                font-size: 12px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                @apply [padding:8px_20px] w-[112px] h-[32px] mt-[12%];
+            }
+
+        }
+        
+        &-primary{
+            @apply max-w-max  leading-[16px] text-white bg-primary [border:1px_solid_#FFFFFF] rounded-[15px] [padding:7px_18px] cursor-pointer;
+        }
+
+        &-opacity{
+            @apply w-[104px] h-[36px] text-white [border:1px_solid_#FFFFFF] rounded-[60px] [padding:8px_24px] cursor-pointer whitespace-nowrap;
+            
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+
+            @media only screen and (max-width: 768px) {
+                @apply w-[72px] h-[25px] [padding:2px_12px];
+                font-size: 12px;
+            }
+        }
+
+        &-video{
+            @apply w-[165px] h-[48px] text-black [border:1px_solid_#000000] rounded-[5px] [padding:8px_16px] cursor-pointer whitespace-nowrap;
+            
+            // font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+
+            @media only screen and (max-width: 420px) {
+                @apply w-[140px] h-[34px] [padding:4px_8px];
+                // font-size: 8px;
+            }
+        }
+
+
+        &-startForFree{
+            @apply max-w-max text-white [border:1px_solid_#FFFFFF] rounded-[5px] [padding:7px_24px] whitespace-nowrap;
+            
+            // font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: 900 !important;
+            font-size: 16px;
+            line-height: 140%;
+        }
+
+    }

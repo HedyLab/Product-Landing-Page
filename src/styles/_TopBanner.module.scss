@@ -1,0 +1,74 @@
+
+.top-banner{
+    @include col;
+
+    &-headline{
+
+      //laptop
+      @media only screen and (max-width: 1024px) {
+        font-size: 56px;
+        line-height: 140%;
+      }
+      
+      //tablet
+      @media only screen and (max-width: 768px) {
+        font-size: 46px;
+        line-height: 140%;
+      }
+
+      //mobile
+      @media only screen and (max-width: 480px) {
+        font-size: 32px;
+        line-height: 140%;
+      }
+
+      //iphone mobile
+      @media only screen and (max-width: 420px) {
+        font-size: 24px;
+        line-height: 140%;
+      }
+  
+    }
+}
+
+.banner-col{
+    @apply my-8 m-auto;
+    @include col;
+    position: relative;
+}
+
+.banner-bg-img{
+    padding-top: 100px;
+}
+
+.banner-img{
+    /* @apply top-2; */
+    position: absolute;
+    top:1px;
+}
+
+.watchVideo{
+  @apply fixed top-0 left-0 z-[1000] w-screen h-screen ;
+
+  &-col{
+    // @apply absolute w-screen h-screen right-[0%] bg-white;
+
+    @apply m-auto flex justify-center mt-[10%];
+
+    @media only screen and (max-width: 1280px) {
+      @apply mt-[7%];
+    }
+    @media only screen and (max-width: 992px) {
+      @apply mt-[37%];
+    }
+    // @media only screen and (max-width: 768px) {
+    //   @apply mt-[57%];
+    // }
+  }
+
+  &-icon {
+    @apply left-[10px] top-[10px] cursor-pointer bg-white rounded-[5px];
+  }
+
+
+}

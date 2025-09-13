@@ -1,0 +1,13 @@
+.form {
+	@apply w-full h-full space-y-[16px];
+
+	&-btnArea {
+		@apply w-full overflow-visible mx-auto ;
+
+		&-btnList {
+			@include row;
+			@apply space-x-[8px] my-16 ;
+		}
+	}
+
+}

@@ -1,0 +1,123 @@
+
+.introduceFunction{
+    @include col;
+    @apply mt-24 tablet:mt-16;
+
+    &-headline {
+
+        //laptop
+      @media only screen and (max-width: 1024px) {
+        font-size: 56px;
+        line-height: 140%;
+      }
+      
+      //tablet
+      @media only screen and (max-width: 768px) {
+        font-size: 46px;
+        line-height: 140%;
+      }
+
+      //mobile
+      @media only screen and (max-width: 480px) {
+        font-size: 32px;
+        line-height: 140%;
+      }
+
+      //iphone mobile
+      @media only screen and (max-width: 420px) {
+        font-size: 24px;
+        line-height: 140%;
+      }
+    }
+
+    &-col{
+        @include col;
+
+        @apply max-w-[1204px] w-full m-auto px-2;
+
+        // @media only screen and (max-width: 1024px) {
+        //   @apply w-[998px];
+        
+        // }
+
+        // @media only screen and (max-width: 768px) {
+        //   @apply w-[592px];
+        
+        // }
+    
+        // //mobile
+        // @media only screen and (max-width: 480px) {
+        //   @apply w-[448px];
+    
+        // }
+    
+        // // //iphone mobile
+        // @media only screen and (max-width: 420px) {
+        //   @apply w-[360px];
+    
+        // }
+    }
+
+    .introduceFeature{
+        @apply w-full;
+    }
+
+    &-onceImg{
+      @apply  mt-16 hidden;
+    //     // @apply w-[998px];
+
+      @media only screen and (max-width: 1439px) {
+        @apply flex;
+      
+      }
+    
+    //     //mobile
+    //     @media only screen and (max-width: 480px) {
+    //     @apply w-[448px];
+    
+    //     }
+    
+    //     //iphone mobile
+    //     @media only screen and (max-width: 420px) {
+    //     @apply w-[368px];
+    
+    //     }
+    }
+}
+
+.analysis-img{
+  @apply h-[636px];
+}
+
+.robot-img{
+  @apply h-[498px];
+}
+
+.synergy-img{
+  @apply h-[550px];
+}
+
+.featureIntroduce{
+    @include row;
+    @apply w-[586px];
+
+    @media only screen and (max-width: 1024px) {
+        @apply w-[468px];
+    
+    }
+
+  //   @media only screen and (max-width: 768px) {
+  //       @apply w-[592px];
+    
+  //   }
+
+  //   @media only screen and (max-width: 480px) {
+  //       @apply w-[448px];
+    
+  //   }
+
+  //   @media only screen and (max-width: 420px) {
+  //     @apply w-[359px];
+  
+  // }
+}

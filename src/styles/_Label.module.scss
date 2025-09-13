@@ -1,0 +1,80 @@
+
+.label {
+	@apply text-[14px] w-[100px] h-[24px]  space-x-[6px] rounded-[4px];
+
+	@include row;
+
+	&-decoration {
+		@apply h-[8px] w-[8px] rounded-full;
+
+		&-primary {
+			@apply bg-primary;
+		}
+
+		&-secondary {
+			@apply bg-secondary;
+		}
+
+		&-tertiary {
+			@apply bg-alert;
+		}
+		&-quaternary {
+			@apply bg-grayscale;
+		}
+	}
+
+    
+    // text
+
+	&-text-primary {
+		@apply border-0 bg-transparent text-primary_lightest;
+	}
+
+	&-text-secondary {
+		@apply border-0 bg-transparent text-secondary_lightest;
+	}
+
+	&-text-tertiary {
+		@apply border-0 bg-transparent text-alert_lightest;
+	}
+	&-text-quaternary {
+		@apply border-0 bg-transparent text-grayscale_lightest;
+	}
+
+
+
+    // contained
+
+	&-contained-primary {
+		@apply text-black bg-primary_lightest;
+	}
+
+	&-contained-secondary {
+		@apply text-black bg-secondary_lightest;
+	}
+
+	&-contained-tertiary {
+		@apply text-black bg-alert_lightest;
+	}
+	&-contained-quaternary {
+		@apply text-black bg-grayscale_lightest;
+	}
+
+
+    // outlined
+
+	&-outlined-primary {
+		@apply border-2 border-primary_lightest;
+	}
+
+	&-outlined-secondary {
+		@apply border-2 border-secondary_lightest;
+	}
+
+	&-outlined-tertiary {
+		@apply border-2 border-alert_lightest;
+	}
+	&-outlined-quaternary {
+		@apply border-2 border-grayscale_lightest;
+	}
+}

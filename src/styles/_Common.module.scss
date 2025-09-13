@@ -1,0 +1,7 @@
+@mixin row {
+	@apply flex flex-row justify-center items-center;
+}
+
+@mixin col {
+	@apply flex flex-col justify-center items-center;
+}

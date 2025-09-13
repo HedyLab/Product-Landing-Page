@@ -1,0 +1,113 @@
+.input {
+	&-small {
+		@apply min-h-[65px];
+	}
+
+	&-large {
+		@apply min-h-[92px];
+	}
+
+	&-none {
+		@apply min-h-fit;
+	}
+
+	&-inputBar {
+		@apply relative cursor-pointer w-full;
+
+		&-input {
+			// @apply w-full flex-1 h-[32px] py-[12px] mt-[4px] outline-none;
+			@apply w-full flex-1 h-[32px] py-[12px] mt-[4px] text-[14px] bg-transparent ;
+
+		}
+
+		&-icon-end {
+			@apply absolute right-[10px] top-[13px];
+
+			&-border_b {
+				filter: invert(100%) brightness(250%) saturate(0%);
+			}
+
+			&-none {
+				filter: invert(100%) brightness(250%) saturate(0%);
+			}
+		}
+
+		&-outlined {
+			// @apply px-[12px] rounded-[5px] border border-black_tertiary text-[14px] bg-transparent outline-none;
+			@apply  rounded-[5px] border border-black_tertiary text-[14px] bg-transparent outline-none;
+
+			&:-webkit-autofill:focus {
+				@apply outline-none border-primary;
+			}
+			&:focus {
+				@apply outline-none border-primary;
+			}
+
+			&-px{
+				@apply px-[30px];
+			}
+
+			&-paddingLeft{
+				@apply pl-[30px] pr-[12px] ;
+			}
+			&-paddingRight{
+				@apply pl-[12px] pr-[30px] ;
+			}
+			&-paddingInit{
+				@apply px-[12px];
+			}
+
+		}
+
+		&-border_b {
+			@apply rounded-none border-b border-white text-[14px] text-white bg-transparent outline-none;
+
+			&:-webkit-autofill,
+			&:-webkit-autofill:hover,
+			&:-webkit-autofill:focus,
+			&:-webkit-autofill:active {
+				@apply outline-none;
+				transition: color 99999s ease-out, background-color 99999s ease-out;
+			}
+		}
+
+		&-none {
+			@apply rounded-none border-none text-[14px] text-white bg-transparent;
+		}
+
+
+	}
+
+	&-radio{
+		@apply text-[14px] text-black;
+	}
+
+}
+
+label input[type='radio']:checked:after{
+	// width: 15px;
+	// height: 15px;
+	// border-radius: 15px;
+	// top: -2px;
+	// left: -1px;
+	// position: relative;
+	background-color: #FFAB37 !important;
+	// content: '';
+	// display: inline-block;
+	// visibility: visible;
+	border: 1px solid #FFAB37 !important;
+}
+
+.permission-input input[type='radio']:checked:after{
+	background-color: #FFAB37 !important;
+	// content: '';
+	// display: inline-block;
+	// visibility: visible;
+	border: 1px solid #FFAB37 !important;
+}
+
+// @media (min-width:640px) {
+//     .messenger-room-send-inputArea-iconArea-icon{
+//     filter: brightness(0.5) invert(1);
+//     }
+// }

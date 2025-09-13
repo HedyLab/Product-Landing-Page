@@ -1,0 +1,55 @@
+.ourAnalysis{
+    &-headline{
+        
+      //laptop
+      @media only screen and (max-width: 1024px) {
+        font-size: 56px;
+        line-height: 140%;
+
+      }
+      
+      //tablet
+      @media only screen and (max-width: 768px) {
+        font-size: 46px;
+        line-height: 140%;
+      }
+
+      //mobile
+      @media only screen and (max-width: 480px) {
+        font-size: 32px;
+        line-height: 140%;
+      }
+
+      //iphone mobile
+      @media only screen and (max-width: 400px) {
+        font-size: 24px;
+        line-height: 140%;
+      }
+
+      &-col{
+        @media only screen and (max-width: 768px) {
+          @apply flex flex-col items-center;
+        }
+      }
+    }
+
+
+    
+    &-text{
+      //tablet
+        @media only screen and (max-width: 768px) {
+        @include col;
+        @apply my-8 mx-2 px-4 w-full;
+      }
+
+      // //mobile
+      // @media only screen and (max-width: 480px) {
+      //   @apply w-[448px];
+      // }
+
+      // //iphone mobile
+      // @media only screen and (max-width: 420px) {
+      //   @apply w-[368px];
+      // }
+    }
+}

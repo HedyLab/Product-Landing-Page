@@ -1,0 +1,96 @@
+.introduce{
+    @include col;
+
+    &-headline{
+        
+        //laptop
+        @media only screen and (max-width: 1024px) {
+          font-size: 56px;
+          line-height: 140%;
+  
+        }
+        
+        //tablet
+        @media only screen and (max-width: 768px) {
+          font-size: 46px;
+          line-height: 140%;
+        }
+  
+        //mobile
+        @media only screen and (max-width: 480px) {
+          font-size: 32px;
+          line-height: 140%;
+        }
+  
+        //iphone mobile
+        @media only screen and (max-width: 420px) {
+          font-size: 24px;
+          line-height: 140%;
+        }
+  
+    }
+
+    &-text{
+      
+      //  //tablet
+      //  @media only screen and (max-width: 768px) {
+      //   @include col;
+      //   @apply my-8 mx-4 w-[592px];
+      // }
+
+      // //mobile
+      // @media only screen and (max-width: 480px) {
+      //   @apply w-[448px];
+      // }
+
+      //iphone mobile
+      // @media only screen and (max-width: 420px) {
+      //   @apply w-[359px];
+      // }
+    }
+
+    &-col{
+        @include col;
+    }
+}
+
+.featureFunc{
+
+    @include col;
+    @apply w-[277px] h-[276px];
+    padding: 0px 16px;
+
+    //laptop
+    @media only screen and (max-width: 1024px) {
+      @apply w-[222px] h-[300px];
+    }
+
+    //tablet
+    @media only screen and (max-width: 768px) {
+      @apply w-[288px] h-[276px];
+    }
+
+     //mobile
+     @media only screen and (max-width: 480px) {
+      @apply w-[220px] h-[300px];
+    }
+
+
+    //iphone mobile
+    @media only screen and (max-width: 420px) {
+      @apply w-[176px] h-[299px];
+    }
+}
+
+.ourMission{
+
+    @include row;
+    @apply w-[277px] h-[177px];
+}
+
+.animation-img{
+  //mobile
+  @media only screen and (max-width: 480px) {
+    @apply block my-[53px];
+  }
+}

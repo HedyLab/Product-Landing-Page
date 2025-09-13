@@ -1,0 +1,39 @@
+
+
+
+@import '_Common.module.scss';
+@import '_Headline.module.scss';
+@import '_TopBanner.module.scss';
+@import '_Introduce.module.scss';
+@import '_ContentText.module.scss';
+@import '_SupporterAndCustomer.module.scss';
+@import '_Foot.module.scss';
+@import '_StartForFree.module.scss';
+@import '_ImMasterAndBusiness.module.scss';
+@import '_Dropdown.module.scss';
+@import '_LanguageSelector.scss';
+@import '_ListItem.module.scss';
+@import '_Button.module.scss';
+@import '_IntroduceFunction.module.scss';
+@import '_ThirdProgramFee.module.scss';
+@import '_ContactProfessional.module.scss';
+@import '_Form.module.scss';
+@import '_Input.module.scss';
+@import '_Label.module.scss';
+@import '_FormInput.module.scss';
+@import '_VariousDevices.module.scss';
+@import '_OurAnalysis.module.scss';
+@import '_Popup.module.scss';
+@import '_ErrorText.module.scss';
+@import '_AgreePrivateAndService.module.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+
+*{
+    font-family: 'Noto Sans TC',Noto Sans, sans-serif;
+    @apply box-border;
+}
+
+
+
+

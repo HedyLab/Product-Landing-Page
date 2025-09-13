@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+    /* body {
+        @apply min-w-[992px]
+    } */
+}
+
+@layer components {
+    *{
+        @apply font-bold
+    }
+
+    .mainPaddingX{
+        @apply px-[110px] sm:px-[21px]
+        /* @apply px-[4%]  */
+
+    }
+    .mainPositionleft{
+        @apply left-[110px]
+    }
+    .sm_mainPositionleft{
+        @apply sm:left-[21px]
+    }
+
+    /* 按鈕(還沒整理好) */
+
+    /*  Banner有白邊大圓角_rounded_34.5px */
+    /* 註冊 */
+    .Btn0{
+        @apply max-w-max rounded-[34.5px] [border:2px_solid_#FFFFFF] [padding:12px_29px] text-[1.75rem] text-white bg-[#1A374D]  leading-[1.75rem] cursor-pointer;
+    }
+    /*  Banner沒有白邊中圓角_rounded_10px */
+    /* 註冊 */
+    .Btn1{
+        @apply max-w-max rounded-[10px] border-none text-[18px] text-white bg-[#1A374D] [padding:9px_22px] cursor-pointer;
+    }
+    /*  Banner沒有白邊中圓角_rounded_7px */
+    /* 了解更多 */
+    .Btn2{
+        @apply max-w-max rounded-[7px] border-none text-[18px] text-white bg-[#1A374D] [padding:5px_26px] cursor-pointer;
+    }
+    /*  Banner沒有白邊中圓角_rounded_4px */
+    .Btn3{
+        @apply max-w-max rounded-[4px] border-none text-[18px] text-white bg-[#1A374D] [padding:3px_24.5px] cursor-pointer;
+    }
+    /* main區域有陰影的大圓角_rounded_20px */
+    .Btn4{
+        @apply max-w-max w-[127px] h-[38px] rounded-[38px] border-none text-[14px] text-white bg-[#1A374D] [padding:9px_35px] shadow-lg cursor-pointer;
+    }
+
+    /* .Btn3{
+        @apply max-w-max rounded-[4px] border-none text-[18px] text-white bg-[#1A374D] [padding:5px_30px] cursor-pointer;
+    }
+    
+    .Btn5{
+        @apply max-w-max rounded-[4px] border-none text-[18px] text-white bg-[#1A374D] px-[24.5px] cursor-pointer; 
+    }*/
+
+    .btn {
+        @apply max-w-max  leading-[16px] text-white bg-[#1A374D] [border:1px_solid_#FFFFFF] rounded-[15px] [padding:7px_18px] cursor-pointer;
+    }
+    .btn2 {
+        @apply bg-blueDeep text-sm py-[11px] px-[35px] text-white rounded-[20px] cursor-pointer;
+    }
+
+    .btn3{
+        @apply max-w-max text-base leading-[16px] text-white bg-[#1A374D] [border:1px_solid_#FFFFFF] rounded-[20px] [padding:10px_32px] cursor-pointer whitespace-nowrap;
+    }
+    .btn5 {
+        @apply max-w-max text-xl text-white bg-[#1A374D] [border:1px_solid_#FFFFFF] rounded-[20px] [padding:10px_32px] cursor-pointer;
+    }
+
+    .btn28 {
+        @apply max-w-max text-[1.75rem] leading-[1.75rem] text-white bg-[#1A374D] [border:2px_solid_#FFFFFF] rounded-[34.5px] [padding:12px_29px] cursor-pointer;
+    }
+
+    /* 卡片 */
+
+    .CardServer-wrap {
+        @apply flex flex-col text-center items-center justify-center w-[259px] h-[262px] bg-white shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-[6px]; 
+    }
+    .CardServer-imgWrap {
+        @apply  h-[114px] w-[114px] mb-[29px]  ; 
+    }
+    .CardServer-imgInner {
+        @apply w-full h-full; 
+    }
+    .CardServer-title {
+        @apply text-xl text-[#1A374D] font-bold mb-[23px]; 
+    }
+ 
+    /* 下拉菜單 */
+    .downListWrap {
+        @apply absolute top-[21px] left-0 h-[194px]  w-[370px] z-10;
+    }
+    .downListWrap-masterBox{
+        @apply absolute top-[21px] left-0 h-[194px]  w-[100px] z-10;
+    }
+    .downListUl-masterBox{
+        @apply  w-[100px] [borderTop:3px_solid_#0D2859] shadow-[0_4px_4px_rgba(0,0,0,0.25)] bg-white ;
+    }
+    .downListUl {
+        @apply  min-w-[255px] max-w-[370px] [borderTop:3px_solid_#0D2859] shadow-[0_4px_4px_rgba(0,0,0,0.25)] bg-white ;
+    }
+    .downListLi {
+        @apply flex justify-start items-center text-center  leading-[39px] [borderBottom:1px_solid_rgba(26,55,77,0.27)] cursor-pointer [padding:0_0_0_20px];
+    }
+
+    /* 齊頭尾置中 */
+    .text-justify-center {
+        text-align: justify;
+        text-align-last: center;
+    }
+    
+    /* col-wrap */
+    .flex-col-wrap{
+        flex-flow: column wrap;
+        /* align-content: flex-start;  */
+    }
+
+}
+
+@layer utilities {
+    /* Navbar */
+
+
+
+}

@@ -1,0 +1,36 @@
+.agree-layout{
+    @apply w-[1216px] px-1 laptop:w-[960px] laptop:max-w-full tablet:w-[640px] mobile:w-[448px] s:w-[368px] m-auto border-b-[1px] border-shadowGray mt-[70px];
+}
+
+.agree-title{
+    font-size:18px;
+    &-row{
+        @apply mb-12;
+    }
+    &-col{
+        @apply w-full pt-2 flex justify-center;
+    }
+    &-text{
+        font-size:16px;
+    }
+}
+
+.agree-body{
+    &-row{
+    }
+    &-col{
+        &-title{
+            font-size:16px;
+            font-weight: 500;
+        }
+
+        &-text{
+          color:#666666;
+          font-size:14px;
+        }
+
+        .text{
+          @apply pb-8;
+        }
+    }
+}
